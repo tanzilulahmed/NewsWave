@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="page1">
+        <!-- <img id="homepage-img" src="./carlos-tejera-FVPf4ikqIpM-unsplash.jpg" alt=""> -->
+        <nav>
+                
+                   <a href="#" onclick="reload()" class="company-logo">
+                    <img src="./Screenshot_2024-03-13_at_8.26.25_PM-removebg-preview copy.png"
+                      alt="">
+                    </a>
+            
+                  
+
+                
+            <div class="nav-part2">
+                <div class="nav-links">
+                    <div class="flex">
+                        <div class="hover-link nav-item">
+                            <a href="#page-2" id="ipl" onclick="onNavItemClick('Sports')">Sports</a>
+                        </div>
+                        <div class="hover-link nav-item">
+                            <a href="#page-2" id="finance" onclick="onNavItemClick('finance')">Finance</a>
+                        </div>
+                        <div class="hover-link nav-item">
+                            <a href="#page-2" id="politics" onclick="onNavItemClick('politics')">Politics</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   <!-- <h3>Menu</h3> -->
+            
+        </nav>
+       
+        <div id="center">
+            
+          
+            <div class="overlay" id="overlay">
+                
+            </div>
+            <div id="homepage-heading">
+                <h1>NewsWave</h1>
+                <div class="searchbox">
+                    <form>
+                    <input id="search-text" type="text" class="news-input" type="text" placeholder="What are you looking for?">
+                    <button id="search-button" class="search-button" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            
+    
+        </div>
+
+    </div> 
+
+    <div id="page-2">
+         <div class="search-result">
+            <h1>Latest News</h1>
+         </div>
+        <div class="cards-container container flex" id="cards-container">
+           
+            
+        </div>
+    </div>
+
+    <template id="template-news-card">
+     
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+        
+        
+    </template>
+   
+    <script src="script.js"></script>
+</body>
+</html>
